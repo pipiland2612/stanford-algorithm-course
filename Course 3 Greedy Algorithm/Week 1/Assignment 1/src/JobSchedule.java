@@ -2,8 +2,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 class Job{
@@ -22,17 +20,14 @@ public class JobSchedule {
     public static void main(String[] args) {
         String path = "/Users/batman/Desktop/Stanford Algorithm/Course 3 Greedy Algorithm/Week 1/Assignment 1/src/jobs.txt";
         List<Job> jobs = readJobFromFiles(path);
-        Collections.sort(jobs, new Comparator<Job>() {
-            @Override
-            public int compare(Job o1, Job o2) {
-                double diff1 = o1.getRatio();
-                double diff2 = o2.getRatio();
+        jobs.sort((o1, o2) -> {
+            double diff1 = o1.getRatio();
+            double diff2 = o2.getRatio();
 
-                if(diff1 != diff2){
-                    return Double.compare(diff2, diff1);
-                }else{
-                    return Integer.compare(o2.weight, o1.weight);
-                }
+            if (diff1 != diff2) {
+                return Double.compare(diff2, diff1);
+            } else {
+                return Integer.compare(o2.weight, o1.weight);
             }
         });
 

@@ -58,13 +58,10 @@ public class PrimsAlgorithm {
             String[] firstLine = reader.readLine().split(" ");
             int numNodes = Integer.parseInt(firstLine[0]);
             int numEdges = Integer.parseInt(firstLine[1]);
-
-
             List<List<Edge>> graph = new ArrayList<>();
             for (int i = 0; i < numNodes; i++) {
                 graph.add(new ArrayList<>());
             }
-
 
             for (int i = 0; i < numEdges; i++) {
                 String[] edgeData = reader.readLine().split(" ");
