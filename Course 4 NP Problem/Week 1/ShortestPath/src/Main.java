@@ -5,14 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         int shortestShortestPath = Integer.MAX_VALUE;
         boolean hasValidGraph = false;
 
-        String[] graphFiles = {"/Users/batman/Desktop/Stanford Algorithm/Course 4 NP Problem/Week 1/ShortestPath/g1.txt", "/Users/batman/Desktop/Stanford Algorithm/Course 4 NP Problem/Week 1/ShortestPath/g2.txt", "/Users/batman/Desktop/Stanford Algorithm/Course 4 NP Problem/Week 1/ShortestPath/g3.txt"};
+        String[] graphFiles = {"g1.txt", "g2.txt", "g3.txt"};
 
         for (int graphIdx = 0; graphIdx < 3; graphIdx++) {
-            String filePath = graphFiles[graphIdx];
+            String filePath = "/Users/batman/Desktop/Stanford Algorithm/Course 4 NP Problem/Week 1/ShortestPath/" + graphFiles[graphIdx];
 
             System.out.println("Processing graph from file: " + filePath);
 
@@ -34,9 +33,9 @@ public class Main {
                 // Apply Johnson's algorithm
                 int[][] distances = Johnson.johnson(graph);
                 if (distances == null) {
-                    System.out.println("Graph from file " + filePath + " has a negative cost cycle.");
+                    System.out.println("Graph from file " + graphFiles[graphIdx] + " has a negative cost cycle.");
                 } else {
-                    // Calculate the shortest shortest path in this graph
+                    // Calculate the shortest path in this graph
                     int graphSSP = Integer.MAX_VALUE;
                     for (int i = 0; i < vertices; i++) {
                         for (int j = 0; j < vertices; j++) {
@@ -46,7 +45,7 @@ public class Main {
                         }
                     }
 
-                    System.out.println("Shortest path for graph from file " + filePath + ": " + graphSSP);
+                    System.out.println("Shortest path for graph from file " + graphFiles[graphIdx] + ": " + graphSSP);
                     shortestShortestPath = Math.min(shortestShortestPath, graphSSP);
                     hasValidGraph = true;
                 }

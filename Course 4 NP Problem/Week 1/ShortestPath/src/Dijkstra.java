@@ -14,7 +14,6 @@ public class Dijkstra {
         PriorityQueue<int[]> minHeap = new PriorityQueue<>(Comparator.comparing(a -> a[1]));
         minHeap.add(new int[]{source, 0});
 
-
         while (!minHeap.isEmpty()) {
             int[] node = minHeap.poll();
             int nodeIndex = node[0];

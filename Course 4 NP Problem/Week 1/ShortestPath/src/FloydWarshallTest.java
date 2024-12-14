@@ -14,8 +14,7 @@ class FloydWarshallTest {
         graph.addEdge(2, 3, 2);
         graph.addEdge(0, 3, 10);
 
-        FloydWarshall floydWarshall = new FloydWarshall();
-        int[][] shortestDistances = floydWarshall.floydWarshall(graph);
+        int[][] shortestDistances = FloydWarshall.floydWarshall(graph);
 
         // Expected output matrix
         int[][] expected = {
@@ -36,8 +35,7 @@ class FloydWarshallTest {
         graph.addEdge(0, 1, 4);
         graph.addEdge(1, 2, 6);
 
-        FloydWarshall floydWarshall = new FloydWarshall();
-        int[][] shortestDistances = floydWarshall.floydWarshall(graph);
+        int[][] shortestDistances = FloydWarshall.floydWarshall(graph);
 
         // Expected output matrix
         int[][] expected = {
@@ -59,8 +57,7 @@ class FloydWarshallTest {
         graph.addEdge(1, 2, -5);
         graph.addEdge(0, 2, 4);
 
-        FloydWarshall floydWarshall = new FloydWarshall();
-        int[][] shortestDistances = floydWarshall.floydWarshall(graph);
+        int[][] shortestDistances = FloydWarshall.floydWarshall(graph);
 
         // Expected output matrix
         int[][] expected = {
@@ -83,8 +80,7 @@ class FloydWarshallTest {
         graph.addEdge(1, 2, 3);
         graph.addEdge(2, 2, 0); // Self-loop
 
-        FloydWarshall floydWarshall = new FloydWarshall();
-        int[][] shortestDistances = floydWarshall.floydWarshall(graph);
+        int[][] shortestDistances = FloydWarshall.floydWarshall(graph);
 
         // Expected output matrix
         int[][] expected = {
@@ -102,8 +98,7 @@ class FloydWarshallTest {
         // Test an empty graph (no vertices and no edges)
         Graph graph = new Graph(0);
 
-        FloydWarshall floydWarshall = new FloydWarshall();
-        int[][] shortestDistances = floydWarshall.floydWarshall(graph);
+        int[][] shortestDistances = FloydWarshall.floydWarshall(graph);
 
         // Expected output matrix is empty
         int[][] expected = {};
@@ -116,8 +111,7 @@ class FloydWarshallTest {
         // Create a graph where all nodes are disconnected
         Graph graph = new Graph(4);
 
-        FloydWarshall floydWarshall = new FloydWarshall();
-        int[][] shortestDistances = floydWarshall.floydWarshall(graph);
+        int[][] shortestDistances = FloydWarshall.floydWarshall(graph);
 
         // Expected output matrix
         int[][] expected = {
