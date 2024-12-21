@@ -21,7 +21,6 @@ This repository contains my solutions and notes from the [Stanford Algorithms Sp
 4. **Shortest Paths Revisited, NP-Complete Problems, and Approximation Algorithms**  
 
 ## Prerequisites  
-- Proficiency in Python and Java.  
 - Basic understanding of mathematics and computer science fundamentals.  
 
 ## How to Use  
