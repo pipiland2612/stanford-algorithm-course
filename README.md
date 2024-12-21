@@ -26,4 +26,4 @@ This repository contains my solutions and notes from the [Stanford Algorithms Sp
 ## How to Use  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/yourusername/stanford-algorithms  
+   git clone https://github.com/pipiland2612/Stanford-Algorithm-Course
