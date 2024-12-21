@@ -1,73 +1,30 @@
-# Stanford Algorithms Course Repository
+# Stanford Algorithms Specialization Solutions  
 
-## 🎯 Course Overview
+This repository contains my solutions and notes from the [Stanford Algorithms Specialization](https://www.coursera.org/specializations/algorithms) on Coursera. Taught by Tim Roughgarden, this specialization dives deep into algorithm design and analysis, providing the tools to solve computational problems efficiently.  
 
-This repository documents my journey through the Stanford Algorithms course, providing a comprehensive collection of algorithmic solutions and learning resources. Designed to build a robust foundation in computer science problem-solving, the course covers critical algorithmic paradigms and techniques.
+## What I Learned  
+- **Divide and Conquer:** Efficient problem-solving techniques using recursion, including merge sort and integer multiplication.  
+- **Graph Algorithms:** Depth-first search, breadth-first search, shortest paths, and spanning trees.  
+- **Dynamic Programming:** Solving optimization problems like the knapsack problem and sequence alignment.  
+- **Greedy Algorithms:** Strategies for solving problems like scheduling and Huffman encoding.  
+- **NP-Completeness:** Understanding intractable problems and approximation algorithms.  
 
-## 📚 Curriculum Highlights
+## Content  
+- **Solutions:** Implementations of algorithms and problem sets in Python and Java.  
+- **Notes:** Summaries of concepts, examples, and key takeaways from each module.  
+- **Resources:** Links to supplementary materials and tools for better understanding.  
 
-### Core Algorithmic Concepts
-- **Divide and Conquer**: Advanced problem decomposition strategies
-- **Dynamic Programming**: Solving complex problems through optimal substructure
-- **Greedy Algorithms**: Optimization techniques for efficient problem-solving
-- **Graph Algorithms**: Comprehensive network and path-finding approaches
-- **Advanced Topics**:
-  - String Matching Algorithms
-  - NP-Completeness
-  - Approximation Algorithms
+## Specialization Overview  
+1. **Divide and Conquer, Sorting, and Searching**  
+2. **Graph Search, Shortest Paths, and Data Structures**  
+3. **Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming**  
+4. **Shortest Paths Revisited, NP-Complete Problems, and Approximation Algorithms**  
 
-## 🛠 Development Environment
+## Prerequisites  
+- Proficiency in Python and Java.  
+- Basic understanding of mathematics and computer science fundamentals.  
 
-### Technologies
-- **Primary Language**: Java
-- **Development Tools**:
-  - IntelliJ IDEA
-  - Visual Studio Code
-- **Version Control**: Git
-- **Build Tools**: Maven, Gradle
-
-## Key Learning Outcomes
-
-1. **Algorithmic Thinking**
-   - Develop systematic approaches to solving computational problems
-   - Understand time and space complexity analysis
-
-2. **Algorithm Design Techniques**
-   - Master recursive and iterative problem-solving strategies
-   - Learn to optimize algorithms for performance
-
-3. **Data Structure Proficiency**
-   - Deep dive into efficient data structure implementations
-   - Understand trade-offs between different data structure choices
-
-## Testing Strategy
-
-- Comprehensive JUnit test coverage
-- Performance benchmarking
-- Edge case analysis
-- Complexity measurement
-
-## Algorithm Performance Tracking
-
-Each algorithm implementation includes:
-- Big O time complexity
-- Space complexity
-- Worst-case and average-case performance metrics
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## Connect
-
-- **Email**: nguyen.t.dang.minh@gmail.com
-- **LinkedIn**: www.linkedin.com/in/tran-dang-minh-nguyen
-- **GitHub**: pipiland2612
-
-## Acknowledgments
-
-Heartfelt thanks to **Professor Tim Roughgarden** and **Stanford University** for creating this transformative learning experience.
+## How to Use  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/yourusername/stanford-algorithms  
